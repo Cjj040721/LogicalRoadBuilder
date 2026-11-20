@@ -9,6 +9,7 @@ A recovered BlueJ project migrated to a reproducible Maven/JavaFX build, with no
 [![Java](https://img.shields.io/badge/Java-17%2B-ED8B00?logo=openjdk&logoColor=white)](https://openjdk.org/)
 [![JavaFX](https://img.shields.io/badge/JavaFX-21.0.6-137CBD)](https://openjfx.io/)
 [![Build](https://img.shields.io/badge/Maven-Build_Passed-2AA887)](#4-verification)
+[![Tests](https://github.com/Cjj040721/LogicalRoadBuilder/actions/workflows/tests.yml/badge.svg)](https://github.com/Cjj040721/LogicalRoadBuilder/actions/workflows/tests.yml)
 
 [Overview](#1-overview) · [Build](#2-build-and-run) · [Architecture](#3-implementation-notes) · [Verification](#4-verification) · [Media](#5-media-and-licensing)
 
@@ -75,7 +76,7 @@ Cleanup also normalizes `file:Images/` to `file:images/` for case-sensitive file
 | BFS repeated calls | Visited state reset correctly |
 | BFS unreachable case | Returned no path as expected |
 
-A small external Java harness was used for BFS checks; no test scaffolding was added to the recovered project. See [`docs/VALIDATION.md`](docs/VALIDATION.md).
+Three JUnit 5 cases now preserve the shortest-path, repeated-call, and unreachable-grid checks in `src/test/java`. GitHub Actions runs `mvn -B -ntp test` on Java 17. See [`docs/VALIDATION.md`](docs/VALIDATION.md).
 
 ## 5. Media and Licensing
 

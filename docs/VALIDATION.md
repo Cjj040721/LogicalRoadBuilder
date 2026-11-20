@@ -16,7 +16,7 @@ An external Java check harness verified:
 - Repeated invocation resets the visited grid correctly.
 - An unreachable grid returns no path.
 
-The harness remains outside the public project because the original repository has no test suite.
+Three JUnit 5 cases in `src/test/java/LogicalRoadBuilder/PathfindingAlgorithmTest.java` now preserve these checks, and GitHub Actions runs them with Maven on Java 17.
 
 ## JavaFX Startup
 

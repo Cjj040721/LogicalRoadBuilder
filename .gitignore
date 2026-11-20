@@ -1,0 +1,16 @@
+target/
+.classpath
+.project
+.settings/
+.idea/
+.vscode/
+.DS_Store
+._*
+*.log
+
+# Original team media is kept only for local verification.
+# Add your own authorised resources using data/README.md and images/README.md.
+data/*
+!data/README.md
+images/*
+!images/README.md
